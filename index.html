@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-dark all text-">
+  <nav class="navbar fixed-top bg-dark text-white border-2 ">
+    <div class="container-fluid">
+      <a class="navbar-brand all bg-dark text-white" href="#">Dictionary</a>
+      <button class="navbar-toggler bg-white " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white "></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Side Bar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <h3>System font style</h3>
+              </a>
+              <ul class="dropdown-menu">
+                <li onclick="change('serif')"><a class="dropdown-item serif" href="#">Serif</a></li>
+                <li onclick="change('cursive')"><a class="dropdown-item cursive" href="#">Cursive</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li onclick="change('sans-serif')"><a class='dropdown-item sans-serif' href="#">Sans-Serif(default)</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="night-toggle" style="display: inline-block" onClick="switchMode()">
+                <div id="moon" class="moon"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+    </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark rounded border all border-2 shadow-lg" style="position: absolute; top:150px">
+      <div class="container-fluid">
+        <form class="d-flex input-group w-auto wrap">
+          <input type="search" class="form-control rounded input-box" placeholder="Search desired word" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text text-white txt border-0" id="search-addon" style="background: transparent;">
+            <i class="fas fa-search search" style="margin: 10px;background: transparent;color:white"></i>
+          </span>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <div class="result">
+    <div>
+
+    </div>
+  </div>
+  <div class="accordion accordion-flush res bg-dark all" id="accordionFlushExample">
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

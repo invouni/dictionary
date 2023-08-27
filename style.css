@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.wrapper{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+  background: #929AAB;
+  
+}
+.res {
+  position: relative;
+  top:300px;
+  
+}
+.wrapper,.myStyle{
+  background: #929AAB;
+}
+
+.night-toggle {
+width: 33px;
+height: 33px;
+right: 20px;
+top: 20px;
+}
+.night-toggle:hover{
+  cursor: pointer;
+}
+.moon {
+  background-color: transparent;
+  box-shadow: -6px 1px 0 3px #275e8e;
+  border-left:3px solid #27476D;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  margin-left:8px;
+  margin-top:0px;
+  transition: 0.4s;
+}
+.sun {
+  background-color: #fdd462;
+  border-radius:50%;
+  width: 26px;
+  height: 26px;
+  transition: 0.4s;
+}
